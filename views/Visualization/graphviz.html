@@ -78,7 +78,6 @@
 
 <label id=debug></label>
 
-<img name=preview id=preview src="{{ = session.graphviz_image }}" style="width:100px; height:100px;"/>
 <object type="image/svg+xml" name=network id=network data="{{ = session.graphviz_image }}" onLoad="svg=this.contentDocument; graph=svg.getElementById('graph1'); installSVGonClickListeners(); Reset(); Iterate();"></object>
 <script>
 	function AutoLoad() {
